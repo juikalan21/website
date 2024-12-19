@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: #414144;
+        }
+    </style>
+</head>
+<body>
+</body>
+    <img src =  "https://images.pexels.com/photos/577585/pexels-photo-577585.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" width="100px" alt="no image">
+    <img src =  "./download.jpeg" width="100px" alt="no image">
+    <picture>
+        <source srcset="./download.jpeg"/>
+        <img src="./download.jpeg" alt="">
+    </picture>
+
+    <!-- an image map generator -->
+    <img src="WIN_20241102_11_10_30_Pro.jpg" usemap="#image-map">
+
+        <map name="image-map">
+        <area onclick="one()" target="" alt="" title="" href="" coords="670,386,159" shape="circle">
+        <area onclick="two()" target="" alt="" title="" href="" coords="670,386,159" shape="circle">
+    </map>
+    <script> 
+        function one(){
+            alert("you clicked on one")
+        }
+        function two(){
+            alert("you clickec on two")
+        }
+    </script>
+</html>
